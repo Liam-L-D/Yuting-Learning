@@ -1,0 +1,84 @@
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAV */
+header {
+  transition: all 0.3s ease;
+}
+
+#mobile-menu {
+  box-shadow: 0 12px 24px rgba(6, 27, 78, 0.08);
+}
+
+/* HERO IMAGE */
+.hero-image img {
+  transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.02);
+}
+
+/* BUTTONS */
+.btn-main {
+  transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+  transform: translateY(-2px);
+}
+
+/* CARDS */
+.info-card,
+.service-card {
+  transition: all 0.35s ease;
+}
+
+.info-card:hover,
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+/* FOOTER */
+footer {
+  letter-spacing: 0.3px;
+}
+
+/* iPhone */
+@media (max-width: 640px) {
+  section {
+    overflow: hidden;
+  }
+
+  h1 {
+    line-height: 1.08;
+  }
+
+  #mobile-menu a {
+    font-size: 16px;
+  }
+}
+
+/* iPad */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-image {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+}
